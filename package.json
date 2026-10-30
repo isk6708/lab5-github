@@ -1,0 +1,41 @@
+{
+  "name": "@isk6708/lab5-github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest && make-coverage-badge"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isk6708/lab5-github.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isk6708/lab5-github/issues"
+  },
+  "jest": {
+    "verbose": true,
+    "coverageReporters": [
+      "json-summary",
+      [
+      "text",
+        {
+        "file": "coverage.txt",
+        "path": "./coverage"
+        }
+      ],
+      "lcov"
+      ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "./src/**"
+      ]
+  },
+  "homepage": "https://github.com/isk6708/lab5-github#readme",
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "make-coverage-badge": "^1.2.0"
+  }
+}
