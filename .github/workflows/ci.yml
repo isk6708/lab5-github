@@ -10,7 +10,8 @@ jobs:
         steps:
             - uses: actions/checkout@v6
             - name: Set up Node.js
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v4.2.0  # Or check if a newer patch/version is available
+        
               with:
                 node-version: "22.13.1"
                 check-latest: true
